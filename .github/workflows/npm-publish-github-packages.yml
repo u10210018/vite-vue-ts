@@ -38,9 +38,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: echo "v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
         if: ${{ steps.release.outputs.release_created }}
-      - id: 'upload-files'
-        uses: 'google-github-actions/upload-cloud-storage@v1'
-        with:
-          path: './dist'
-          destination: 'jeff-storage-test/v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}'
-        if: ${{ steps.release.outputs.release_created }}
+      - name: 'Use gcloud CLI'
+        run: 'gsutil -m rsync -R ./dist/* gs://jeff-storage-test/v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}'
+        if: ${{ steps.release.outputs.release_created })

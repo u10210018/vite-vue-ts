@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/u10210018/vite-vue-ts/compare/v1.3.0...v1.4.0) (2023-10-24)
+
+
+### Features
+
+* Update npm-publish-github-packages.yml ([31df40f](https://github.com/u10210018/vite-vue-ts/commit/31df40f0124d36dad1f141ebfdb9ce6fad362db2))
+
 ## [1.3.0](https://github.com/u10210018/vite-vue-ts/compare/v1.2.0...v1.3.0) (2023-10-24)
 
 

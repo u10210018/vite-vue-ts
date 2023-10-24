@@ -39,5 +39,5 @@ jobs:
       - run: echo "v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
         if: ${{ steps.release.outputs.release_created }}
       - name: 'Use gcloud CLI'
-        run: "gsutil -m rsync -R ./dist/* gs://jeff-storage-test/v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
+        run: "gsutil -m rsync -r ./dist/* gs://jeff-storage-test/v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
         if: ${{ steps.release.outputs.release_created }}

@@ -38,6 +38,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: echo "v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
         if: ${{ steps.release.outputs.release_created }}
-      - name: 'Use gcloud CLI'
-        run: "gsutil -m cp -r ./dist/* gs://jeff-storage-test/v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
-        if: ${{ steps.release.outputs.release_created }}
+      - run: echo "成功了！"
+        if: ${{ steps.release.outputs.release_created && success() }}
+      - run: echo "失敗了！"
+        if: ${{ steps.release.outputs.release_created && failure() }}

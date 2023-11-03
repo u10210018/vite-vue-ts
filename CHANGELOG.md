@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/u10210018/vite-vue-ts/compare/v1.5.0...v1.6.0) (2023-11-03)
+
+
+### Features
+
+* remove no use action ([1e9127e](https://github.com/u10210018/vite-vue-ts/commit/1e9127efe9c0749e8c055855445a98c0e6a7f371))
+
 ## [1.5.0](https://github.com/u10210018/vite-vue-ts/compare/v1.4.0...v1.5.0) (2023-10-24)
 
 

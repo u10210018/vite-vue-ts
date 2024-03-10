@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/u10210018/vite-vue-ts/compare/v1.6.0...v1.7.0) (2024-03-10)
+
+
+### Features
+
+* update dependencies ([bfd48c9](https://github.com/u10210018/vite-vue-ts/commit/bfd48c9c88d22a153570c2cce87f0d7c65f2a802))
+
 ## [1.6.0](https://github.com/u10210018/vite-vue-ts/compare/v1.5.0...v1.6.0) (2023-11-03)
 
 

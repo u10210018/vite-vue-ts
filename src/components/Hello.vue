@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useHello } from '@/composables/useHello'
+import { useHello } from '@/composable/useHello'
 
 const { sayHi } = useHello()
 </script>

@@ -8,5 +8,5 @@ export default {
       center: true,
     },
   },
-  plugins: [require('tailwind-scrollbar-hide')],
+  plugins: [require('tailwindcss-animate')],
 }

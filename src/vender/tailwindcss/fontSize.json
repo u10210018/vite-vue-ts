@@ -1,41 +1,41 @@
 {
-    "h1": [
-        "5.653rem",
-        {
-            "fontWeight": 600
-        }
-    ],
-    "h2": [
-        "3.998rem",
-        {
-            "fontWeight": 600
-        }
-    ],
-    "h3": [
-        "2.827rem",
-        {
-            "fontWeight": 600
-        }
-    ],
-    "h4": [
-        "1.999rem",
-        {
-            "fontWeight": 600
-        }
-    ],
-    "h5": [
-        "1.414rem",
-        {
-            "fontWeight": 600
-        }
-    ],
-    "h6": [
-        "1.2rem",
-        {
-            "fontWeight": 600
-        }
-    ],
-    "p": ["1.2rem"],
-    "sm": ["1rem"],
-    "xs": ["0.75rem"]
+  "h1": [
+    "5.653rem",
+    {
+      "fontWeight": 600
+    }
+  ],
+  "h2": [
+    "3.998rem",
+    {
+      "fontWeight": 600
+    }
+  ],
+  "h3": [
+    "2.827rem",
+    {
+      "fontWeight": 600
+    }
+  ],
+  "h4": [
+    "1.999rem",
+    {
+      "fontWeight": 600
+    }
+  ],
+  "h5": [
+    "1.414rem",
+    {
+      "fontWeight": 600
+    }
+  ],
+  "h6": [
+    "1.2rem",
+    {
+      "fontWeight": 600
+    }
+  ],
+  "p": ["1.2rem"],
+  "sm": ["1rem"],
+  "xs": ["0.75rem"]
 }

@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import { useHeadStyle } from '@/composables/useHeadStyle'
+import { useMouse } from '@vueuse/core'
+
 import HomeView from '@/pages/HomeView.vue'
 
-const { sheetHtml } = useHeadStyle()
+const { x, y } = useMouse()
+
+watch([x, y], ([nX, nY]) => {
+  console.log([nX, nY])
+})
 </script>
 
 <template>
   <div>
-    <div v-html="sheetHtml"></div>
     <HomeView />
   </div>
 </template>

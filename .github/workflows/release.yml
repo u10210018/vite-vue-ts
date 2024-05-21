@@ -27,8 +27,7 @@ jobs:
           npm pkg get version
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
       - run: |
-          echo "Package version: ${{ steps.get-version.outputs.current_version }}"
+          echo "Package version: ${{ steps.get-version.outputs.version }}"
       - run: npx changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - run: pnpm install & pnpm run build

@@ -23,9 +23,7 @@ jobs:
           version: 8
       - name: Get package version
         id: get-version
-        run: |
-          npm pkg get version
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+        run: echo "version=$(npm pkg get version | tr -d '"')" >> $GITHUB_OUTPUT
       - run: |
           echo "Package version: ${{ steps.get-version.outputs.version }}"
       - run: npx changelogithub
